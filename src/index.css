@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: Poppins;
+    src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@theme{
+    --font-poppins: "Poppins", sans-serif;
+}
+
+@layer base {
+    .fs {
+        @apply border-2 border-[#ccc] p-4 rounded-lg mb-4
+    }
+
+    .legend {
+        @apply font-bold px-2
+    }
+}
+
+@utility centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@utility col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@utility between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
